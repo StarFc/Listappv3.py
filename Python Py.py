@@ -30,6 +30,9 @@ def mainProgram():
             sortList(myList)
         elif choice == "7":
             printLists()
+        elif choice == "8":
+            searchItem = input("What are you looking for?  ")
+            recursiveBinarySearch(unique_list, 0, len(unique_list)-1, int(searchItem))
         else:
             break
             
@@ -87,6 +90,22 @@ def recursiveBinarySearch(unique_list, low, high, x):
             return recursiveBinarySearch(unique_list, mid +1, high, x)
     else:
         print("Your number isn't here!")
+
+def literativeBinarySearch(unique_list, x):
+    low = 0
+    high = len(unique _list)-1
+    mid = 0
+
+    while low <= high:
+        mid = (high + low) //2
+
+        if unique_list[mid] < x:
+            low = mid + 1
+        elif unique_list[mid] > x:
+            high = mid - 1
+        else:
+            return mid
+    return -1
 
 
 def indexValues():
