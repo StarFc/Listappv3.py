@@ -35,6 +35,24 @@ def mainProgram():
             recursiveBinarySearch(unique_list, 0, len(unique_list)-1, int(searchItem))
         else:
             break
+
+void printSomething();
+
+int main(){
+
+    printSomething();
+
+
+    return 0;
+}
+
+void printSomething(){
+    print("I'm a function"):
+    return;
+
+}
+
+    
             
             
 
@@ -43,6 +61,8 @@ def addToList():
     newItem = input("Type an integer here!    ")
     myList.append(int(newItem))
     #we need to think about errors!
+
+'' 
 
 def addABunch():
     print("we're gonna add a bunch of number to your list!")
@@ -61,14 +81,22 @@ def sortList(myList):
     showMe = input("Wanna see your new, sorted list?  Y/N")
     if showMe.lower() =="y":
         print(unique_list)
-     
+"""
+Function explanation: we created a variable called 'indexPos', and stored
+the result of an input function inside it.
 
+We then force the value stored in indexPos into an integer (using the int() function)
+and used the variable to call a value at a specific index position.
+"""
 
-    
 
 def randomSearch():
     print("oH, iM sO rAnDom!!!")
     myList[random.randint(0, len(myList) -1)]
+
+"""
+
+
 
 def linearSearch():
     print("We're going to go through this list one item at a time!")
